@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+html {
+  /* フォントサイズを100%で指定しておくことで、ユーザーがブラウザで設定したフォントサイズが正しく反映されます */
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  /* サイト内のリンクに下線が表示されないように設定します */
+  text-decoration: none;
+}
+img {
+  /* 画像が画面の横幅からはみ出るのを防ぐためにmaxサイズを設定します */
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+/* 画面の最大幅を指定。共通で使用します */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+/* h1タグ用 */
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+/* h2タグ用 */
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+#header {
+  max-width: 960px;
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: center;            
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;                
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;                  
+}
+#header li img.icon {
+  width: 20px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;    
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+}
+
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;  
+  height: 420px;      
+  object-fit: cover;  
+}
+
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align:justify;  
+}
+
+/* works */
+#works ul {
+  display: flex;                  
+  justify-content: space-between; 
+  flex-wrap: wrap;                
+  margin-bottom: 50px;
+}
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 600px) {
+
+  #works ul {
+    flex-direction: column;  
+  }
+  #works li {
+    width: 100%;             
+  }
+}
+
+/* news */
+#news dl {
+  display: flex;           /* 日付とニュースタイトルを横並びに配置します */
+  flex-wrap: wrap;         /* 折り返します */
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 20%;              /* 日付の横幅です */
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news dd {
+  width: 80%;              /* ニュースタイトルの横幅です */
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;   /* レスポンシブ時は縦積みにします */
+  }
+  #news dt {
+    width: 100%;              /* 全幅で表示します */
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;              /* 全幅で表示します */
+    padding-top: 0;
+  }
+}
+
+/* contact */
+
+#contact dl {
+  display: flex;       /* dt、ddタグを横並びに配置します */
+  flex-wrap: wrap;     /* 折り返します */
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;  /* レスポンシブ時は縦積みにします */
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+}
+
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="テキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>My Work - Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="lp1.css">
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="site-title"><a href="lp1.html"><img src="img/logo.svg" alt="My Work"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="./img/benyamin-bohlouli-ikkPKOHtVsQ-unsplash.jpg" alt="インスタグラム">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- mainvisual -->
+    <div id="mainvisual">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+        <img src="img/kara-eads-L7EwHkq1B2s-unsplash.jpg" alt="テキストテキストテキスト">
+      </picture>
+    </div>
+    <!-- about -->
+    <section id="about" class="wrapper">
+      <h2 class="sec-title">About</h2>
+      <ul>
+        <li>Yuhi Koyanagi</li>
+        <li>〒135-0001 東京都江東区毛利2-10-10 103</li>
+        <li>tel: 090-3904-9673</li>
+        <li>url: www.xxxxxx.jp</li>
+        <li>mail: kynobako@gmail.com</li>
+      </ul>
+      <p>
+        プロフィール　小柳です。
+      </p>
+    </section>
+    <!-- works -->
+    <section id="works" class="wrapper">
+      <h2 class="sec-title">Works</h2>
+      <ul>
+        <li><img src="img/vu-anh-TiVPTYCG_3E-unsplash.jpg" alt="テキストテキストテキスト"></li>
+        <li><img src="img/dillon-kydd-XGvwt544g8k-unsplash.jpg" alt="テキストテキストテキスト"></li>
+        <li><img src="img/stephan-bechert-yFV39g6AZ5o-unsplash.jpg" alt="テキストテキストテキスト"></li>
+        <li><img src="img/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg" alt="テキストテキストテキスト"></li>
+        <li><img src="img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg" alt="テキストテキストテキスト"></li>
+        <li><img src="img/greg-rivers-rChFUMwAe7E-unsplash.jpg" alt="テキストテキストテキスト"></li>
+      </ul>
+    </section>
+    <!-- news -->
+    <section id="news" class="wrapper">
+      <h2 class="sec-title">News</h2>
+      <dl>
+        <dt>2020.XX.XX</dt>
+        <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+        <dt>2020.XX.XX</dt>
+        <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+        <dt>2019.XX.XX</dt>
+        <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        <dt>2019.XX.XX</dt>
+        <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+        <dt>2019.XX.XX</dt>
+        <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+      </dl>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+      <h2 class="sec-title">Contact</h2>
+      <form action="#" method="post">
+        <dl>
+          <dt><label for="name">NAME</label></dt>
+          <dd><input type="text" id="name" name="your-name"></dd>
+          <dt><label for="email">E-mail</label></dt>
+          <dd><input type="email" id="email" name="your-email"></dd>
+          <dt><label for="message">MESSAGE</label></dt>
+          <dd><textarea id="message" name="your-message"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+      </form>
+    </section>
+
+  </main>
+  <footer id="footer"><p>© 2020 My Work</p></footer>
+</body>
+</html>
